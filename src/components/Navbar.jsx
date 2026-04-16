@@ -22,6 +22,7 @@ const Navbar = () => {
     { name: 'Products', path: '/products' },
     { name: 'Industries', path: '/industries' },
     { name: 'Clients', path: '/clients' },
+    { name: 'R&D', path: '/rnd' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -62,10 +63,14 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <button className="flex items-center gap-2 bg-[#1e3a8a] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-800 transition-all shadow-md active:scale-95">
+            <a 
+              href="/VFPS_Catalogue.pdf" 
+              download 
+              className="flex items-center gap-2 bg-[#1e3a8a] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-800 transition-all shadow-md active:scale-95"
+            >
               <Download size={16} />
               Catalogue
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -101,10 +106,14 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="px-3 pt-4">
-                 <button className="w-full flex items-center justify-center gap-2 bg-[#1e3a8a] text-white px-5 py-4 rounded-xl font-bold">
+                <a 
+                  href="/VFPS_Catalogue.pdf" 
+                  download 
+                  className="w-full flex items-center justify-center gap-2 bg-[#1e3a8a] text-white px-5 py-4 rounded-xl font-bold"
+                >
                   <Download size={20} />
                   Download Catalogue
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>

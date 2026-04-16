@@ -8,6 +8,7 @@ import ProductList from './pages/ProductList';
 import ProductDetail from './pages/ProductDetail';
 import Industries from './pages/Industries';
 import Clients from './pages/Clients';
+import Research from './pages/Research';
 import Contact from './pages/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
 import './App.css';
@@ -25,6 +26,7 @@ function App() {
             <Route path="/products/:id" element={<ProductDetail />} />
             <Route path="/industries" element={<Industries />} />
             <Route path="/clients" element={<Clients />} />
+          <Route path="/rnd" element={<Research />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

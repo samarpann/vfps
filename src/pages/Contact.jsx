@@ -118,16 +118,7 @@ const Contact = () => {
                    </div>
                  </div>
 
-                 {/* Map Placeholder */}
-                 <div className="flex-grow aspect-video bg-slate-100 rounded-[3rem] overflow-hidden relative shadow-inner border border-slate-100">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                       <div className="text-center space-y-4">
-                          <MapPin size={48} className="mx-auto text-slate-300" />
-                          <p className="text-slate-400 font-bold uppercase tracking-widest text-xs">Interactive Map Loading...</p>
-                       </div>
-                    </div>
-                    {/* Real map would go here */}
-                 </div>
+
 
                  <div className="bg-[#25D366] text-white p-10 rounded-[3rem] flex items-center justify-between shadow-2xl hover:scale-[1.02] transition-transform cursor-pointer">
                     <div className="space-y-2">
