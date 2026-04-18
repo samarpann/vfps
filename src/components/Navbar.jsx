@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import logoImg from '../assets/images/logo.png';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -36,7 +38,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 rounded-xl bg-white overflow-hidden shadow-md group-hover:scale-110 transition-transform">
-              <img src="/images/logo.png" alt="VFPS Logo" className="w-full h-full object-contain" />
+              <img src={logoImg} alt="VFPS Logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
               <span className={`text-2xl font-black tracking-tighter leading-none ${scrolled ? 'text-[#1e3a8a]' : 'text-white'}`}>

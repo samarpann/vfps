@@ -1,83 +1,137 @@
+import fryumsImg from '../assets/images/fryums-plant.jpg';
+import kurkureImg from '../assets/images/kurkure-plant.jpg';
+import namkeenImg from '../assets/images/namkeen-plant.jpg';
+import potatoImg from '../assets/images/potato-chips-plant.jpg';
+import cornPuffImg from '../assets/images/corn-puff-plant.jpg';
+import noodlesImg from '../assets/images/noodles-plant.jpg';
+import fryersImg from '../assets/images/fryers.jpg';
+import conveyorsImg from '../assets/images/conveyors.jpg';
+import extrudersImg from '../assets/images/extruders.jpg';
+import flavoringImg from '../assets/images/flavoring.jpg';
+import hero1Img from '../assets/images/hero-1.jpg';
+import rndImg from '../assets/images/r-and-d.jpg';
+import besanExtruderImg from '../assets/images/besan-extruder.jpg';
+import multiFryerImg from '../assets/images/multipurpose-fryer.jpg';
+import mumraPlantImg from '../assets/images/mumra-plant.jpg';
+import namkeenPlantImg from '../assets/images/namkeen-plant.jpg';
+import bucketElevatorImg from '../assets/images/bucket-elevator.jpg';
+import circularFryerImg from '../assets/images/circular-batch-fryer.jpg';
+import doughMixerImg from '../assets/images/dough-mixer.jpg';
+import flavoringDrumImg from '../assets/images/flavoring-drum.jpg';
+import fryumsHydroImg from '../assets/images/fryums-line-hydro.jpg';
+import fryumsNoHydroImg from '../assets/images/fryums-line-no-hydro.jpg';
+import hydroConveyorImg from '../assets/images/hydro-conveyor.jpg';
+import noodlesPlantImg from '../assets/images/noodles-plant.jpg';
+import noodlesRollerImg from '../assets/images/noodles-combine-roller.jpg';
+import nylonSevImg from '../assets/images/nylon-sev-extruder.jpg';
+import puffExtruderImg from '../assets/images/puff-extruder.jpg';
+import rectangularFryerImg from '../assets/images/rectangular-batch-fryer.jpg';
+import vacuumFeederImg from '../assets/images/vacuum-feeding-system.jpg';
+
 export const categories = [
   {
-    id: "fryums-plant",
-    name: "Fryums Plant",
-    description: "Multi-purpose automated fryums production line for 3D and 2D pellets.",
-    image: "/images/fryums-plant.jpg",
-    features: ["Automated processing", "Low oil consumption", "High efficiency"],
-    specs: { capacity: "100-500 kg/hr", power: "15-45 kW", area: "20x10 meters" }
+    id: "automatic-besan-extruder",
+    name: "Automatic Besan Extruder",
+    description: "High-precision extruder for besan based snacks and namkeen.",
+    image: besanExtruderImg,
+    features: ["Digital Control", "Stainless Steel 304", "Adjustable Die"],
+    specs: { capacity: "100-300 kg/hr", power: "15-30 kW", area: "8x4 meters" }
   },
   {
-    id: "kurkure-plant",
-    name: "Kurkure Plant",
-    description: "High-speed extruder lines for snack sticks with perfect texture and taste.",
-    image: "/images/kurkure-plant.jpg",
-    features: ["Corn meal based", "Perfect crunch", "Energy saving"],
-    specs: { capacity: "100-300 kg/hr", power: "30-60 kW", area: "15x8 meters" }
+    id: "automatic-multipurpose-fryer",
+    name: "Automatic Multipurpose Fryer",
+    description: "Advanced frying system for various pellet and extruded snacks.",
+    image: fryersImg,
+    features: ["Heat Exchanger", "Continuous Filtration", "Precision Temp"],
+    specs: { capacity: "200-500 kg/hr", power: "Variable", area: "10x5 meters" }
   },
   {
-    id: "namkeen-plant",
-    name: "Namkeen Plant",
-    description: "Traditional Indian snack manufacturing lines with modern automation.",
-    image: "/images/namkeen-plant.jpg",
-    features: ["Multiple varieties", "Food grade SS 304", "Consistent quality"],
-    specs: { capacity: "200-1000 kg/hr", power: "20-50 kW", area: "25x12 meters" }
+    id: "automatic-mumra-plant",
+    name: "Automatic Mumra Plant",
+    description: "Complete processing line for high-quality expanded rice (Mumra).",
+    image: cornPuffImg,
+    features: ["Steam Heating", "Uniform Roasting", "Full Automation"],
+    specs: { capacity: "150-400 kg/hr", power: "25-50 kW", area: "15x8 meters" }
   },
   {
-    id: "potato-chips-plant",
-    name: "Potato Chips Plant",
-    description: "Fully automated potato chips processing from washing to flavoring.",
-    image: "/images/potato-chips-plant.jpg",
-    features: ["Minimum oil absorption", "Continuous frying", "Auto slicing"],
-    specs: { capacity: "50-1000 kg/hr", power: "40-100 kW", area: "30x10 meters" }
+    id: "automatic-namkeen-plant",
+    name: "Automatic Namkeen Plant",
+    description: "Industrial grade production line for traditional Indian namkeens.",
+    image: namkeenImg,
+    features: ["Multiple Extruders", "Automatic Frying", "Oil Extraction"],
+    specs: { capacity: "500-1000 kg/hr", power: "40-80 kW", area: "25x12 meters" }
   },
   {
-    id: "corn-puff-plant",
-    name: "Corn Puff Plant",
-    description: "Versatile puff production line using air expansion technology.",
-    image: "/images/corn-puff-plant.jpg",
-    features: ["Sugar/Salt coating", "High output", "Low maintenance"],
-    specs: { capacity: "150-400 kg/hr", power: "25-50 kW", area: "18x9 meters" }
+    id: "bucket-elevator",
+    name: "Bucket Elevator",
+    description: "Hygienic material handling and vertical conveying system.",
+    image: conveyorsImg,
+    features: ["Food Grade Buckets", "Variable Speed", "Easy Clean"],
+    specs: { capacity: "Up to 2 tons/hr", power: "1.5-3 kW", area: "Vertical" }
+  },
+  {
+    id: "dough-mixer",
+    name: "Industrial Dough Mixer",
+    description: "Heavy-duty mixing system for noodle and snack dough preparation.",
+    image: rndImg,
+    features: ["High Torque", "Safety Interlocks", "Uniform Mixing"],
+    specs: { capacity: "50-150 kg/batch", power: "5-10 kW", area: "3x3 meters" }
+  },
+  {
+    id: "flavoring-drum",
+    name: "Flavoring Drum & Applicator",
+    description: "Continuous coating system for uniform spice and flavor distribution.",
+    image: flavoringImg,
+    features: ["Mist Spraying", "Variable Rotation", "Powder Feeder"],
+    specs: { capacity: "Sync with line", power: "2-5 kW", area: "5x3 meters" }
+  },
+  {
+    id: "fryums-line-hydro",
+    name: "Fryums Line (with Hydro)",
+    description: "Complete 2D/3D pellet processing with moisture control units.",
+    image: fryumsImg,
+    features: ["Hydro-extractor", "Continuous Dryer", "Multi-stage Frying"],
+    specs: { capacity: "100-500 kg/hr", power: "30-60 kW", area: "25x10 meters" }
   },
   {
     id: "instant-noodles-plant",
     name: "Instant Noodles Plant",
-    description: "Industrial scale noodle production with precision steaming and drying.",
-    image: "/images/noodles-plant.jpg",
-    features: ["Uniform texture", "Steam cooking", "Auto packaging"],
-    specs: { capacity: "200-800 kg/hr", power: "50-120 kW", area: "40x15 meters" }
+    description: "High-speed automated noodle production with precision rolling.",
+    image: noodlesImg,
+    features: ["Combine Roller", "Steam Cooking", "Auto Folding"],
+    specs: { capacity: "200-800 kg/hr", power: "60-120 kW", area: "40x15 meters" }
   },
   {
-    id: "fryers",
-    name: "Industrial Fryers",
-    description: "Custom built continuous and batch fryers for all snack types.",
-    image: "/images/fryers.jpg",
-    features: ["Heat exchanger system", "Oil filtration", "Precise temp control"],
-    specs: { capacity: "Customized", power: "Electric/Gas/Diesel", area: "Variable" }
+    id: "nylon-sev-extruder",
+    name: "Nylon Sev Extruder",
+    description: "Specialized extruder for thin nylon sev and vermicelli.",
+    image: extrudersImg,
+    features: ["Micro-hole Dies", "High Pressure", "Consistent Flow"],
+    specs: { capacity: "50-150 kg/hr", power: "10-20 kW", area: "6x4 meters" }
   },
   {
-    id: "conveyors",
-    name: "Conveyors & Elevators",
-    description: "Food grade material handling systems for seamless production.",
-    image: "/images/conveyors.jpg",
-    features: ["Hygienic design", "Modular belts", "Easy cleaning"],
-    specs: { capacity: "Scaleable", power: "0.5-5 kW", area: "Custom" }
+    id: "potato-chips-plant",
+    name: "Potato Chips Plant",
+    description: "Fully integrated line from potato washing to final flavoring.",
+    image: potatoImg,
+    features: ["Auto Peeler", "Slicer with Water Spray", "Low Oil Retain"],
+    specs: { capacity: "100-1000 kg/hr", power: "50-150 kW", area: "35x12 meters" }
   },
   {
-    id: "extruders",
-    name: "Snack Extruders",
-    description: "Advanced single and twin-screw extruders for diverse snacks.",
-    image: "/images/extruders.jpg",
-    features: ["Interchangeable dies", "Digital controls", "High torque"],
-    specs: { capacity: "100-600 kg/hr", power: "30-90 kW", area: "10x5 meters" }
+    id: "kurkure-plant",
+    name: "Kurkure / Nik Nak Plant",
+    description: "Rotary head extruder line for crunchy corn-based sticks.",
+    image: kurkureImg,
+    features: ["Corn Meal Feed", "Random Shape Dies", "Rapid Cooling"],
+    specs: { capacity: "100-300 kg/hr", power: "35-55 kW", area: "15x8 meters" }
   },
   {
-    id: "flavoring-systems",
-    name: "Flavoring Systems",
-    description: "Continuous coating drums for uniform seasoning application.",
-    image: "/images/flavoring.jpg",
-    features: ["Mist spraying", "Variable speed", "Powder coating"],
-    specs: { capacity: "Matches line", power: "2-5 kW", area: "5x3 meters" }
+    id: "vacum-feeding-system",
+    name: "Vacuum Feeding System",
+    description: "Automated pneumatic material transfer for flour and powders.",
+    image: conveyorsImg,
+    features: ["Dust-free", "Vertical Lift", "Level Sensors"],
+    specs: { capacity: "500 kg/hr", power: "5-10 kW", area: "Compact" }
   }
 ];
 
@@ -85,19 +139,19 @@ export const heroSlides = [
   {
     title: "Revolutionizing Food Processing",
     subtitle: "High-performance automated machines for the global snack industry.",
-    image: "/images/hero-1.jpg",
+    image: hero1Img,
     cta: "Explore Our Plants"
   },
   {
     title: "SS 304 Food Grade Precision",
     subtitle: "Built with the highest standards of hygiene and durability in mind.",
-    image: "/images/hero-1.jpg",
+    image: hero1Img,
     cta: "View Catalog"
   },
   {
     title: "High Production, Low Consumption",
     subtitle: "Engineered for maximum efficiency with minimum oil and fuel usage.",
-    image: "/images/r-and-d.jpg",
+    image: rndImg,
     cta: "Get a Quote"
   }
 ];
@@ -131,9 +185,9 @@ export const whyChooseUs = [
 ];
 
 export const industries = [
-  { name: "Snacks Industry", image: "/images/kurkure-plant.jpg" },
-  { name: "Namkeen Industry", image: "/images/namkeen-plant.jpg" },
-  { name: "Potato Chips", image: "/images/potato-chips-plant.jpg" },
-  { name: "Corn Puff", image: "/images/fryums-plant.jpg" },
-  { name: "Noodles Industry", image: "/images/noodles-plant.jpg" }
+  { name: "Snacks Industry", image: kurkureImg },
+  { name: "Namkeen Industry", image: namkeenImg },
+  { name: "Potato Chips", image: potatoImg },
+  { name: "Corn Puff", image: fryumsImg },
+  { name: "Noodles Industry", image: noodlesImg }
 ];

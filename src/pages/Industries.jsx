@@ -27,7 +27,7 @@ const Industries = () => {
                    className="group relative h-[500px] rounded-[4rem] overflow-hidden shadow-2xl"
                 >
                    <img 
-                     src={ind.image || 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80'} 
+                     src={ind.image} 
                      alt={ind.name}
                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2000ms]"
                    />

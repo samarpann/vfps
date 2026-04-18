@@ -4,6 +4,8 @@ import { Shield, Zap, Wrench, Globe, CheckCircle2, ArrowRight } from 'lucide-rea
 import HeroCarousel from '../components/HeroCarousel';
 import { categories, whyChooseUs, industries } from '../data/products';
 import { Link } from 'react-router-dom';
+import rdImg from '../assets/images/r-and-d.jpg';
+import hero1Img from '../assets/images/hero-1.jpg';
 
 const Home = () => {
   return (
@@ -22,7 +24,7 @@ const Home = () => {
             >
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/images/r-and-d.jpg" 
+                  src={rdImg} 
                   alt="Industrial Machinery" 
                   className="w-full h-full object-cover"
                 />
@@ -89,7 +91,7 @@ const Home = () => {
               >
                 <div className="aspect-[16/10] overflow-hidden relative">
                   <img 
-                    src={product.image || 'https://images.unsplash.com/photo-1558223108-630d932114a1?auto=format&fit=crop&q=80'} 
+                    src={product.image || hero1Img} 
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                   />
@@ -146,7 +148,7 @@ const Home = () => {
             <div className="relative">
               <div className="aspect-square rounded-[4rem] overflow-hidden border-8 border-white/10 shadow-3xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1579389083046-e3df9c2b3325?auto=format&fit=crop&q=80" 
+                  src={hero1Img} 
                   alt="Quality Control" 
                   className="w-full h-full object-cover"
                 />
@@ -237,7 +239,7 @@ const Home = () => {
             {industries.map((industry) => (
               <div key={industry.name} className="group relative aspect-[4/5] rounded-3xl overflow-hidden cursor-pointer">
                 <img 
-                  src={industry.image || 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80'} 
+                  src={industry.image || hero1Img} 
                   alt={industry.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                 />

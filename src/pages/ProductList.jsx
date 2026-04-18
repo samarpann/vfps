@@ -32,7 +32,7 @@ const ProductList = () => {
                 >
                   <div className="aspect-[4/3] overflow-hidden relative">
                      <img 
-                       src={product.image || 'https://images.unsplash.com/photo-1558223108-630d932114a1?auto=format&fit=crop&q=80'} 
+                       src={product.image} 
                        alt={product.name}
                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                      />

@@ -35,7 +35,7 @@ const ProductDetail = () => {
                className="rounded-[3rem] overflow-hidden shadow-3xl bg-slate-50 border border-slate-100 p-8"
             >
               <img 
-                src={product.image || 'https://images.unsplash.com/photo-1558223108-630d932114a1?auto=format&fit=crop&q=80'} 
+                src={product.image} 
                 alt={product.name} 
                 className="w-full h-auto rounded-3xl"
               />
@@ -130,7 +130,7 @@ const ProductDetail = () => {
                {categories.filter(c => c.id !== id).slice(0, 4).map(rel => (
                  <Link key={rel.id} to={`/products/${rel.id}`} className="block group">
                     <div className="aspect-video bg-white rounded-3xl overflow-hidden mb-4 shadow-md group-hover:shadow-xl transition-all">
-                       <img src={rel.image || 'https://images.unsplash.com/photo-1558223108-630d932114a1?auto=format&fit=crop&q=80'} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" />
+                       <img src={rel.image} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" />
                     </div>
                     <p className="font-bold text-slate-900 group-hover:text-[#1e3a8a] transition-colors">{rel.name}</p>
                  </Link>
