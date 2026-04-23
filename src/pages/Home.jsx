@@ -4,8 +4,10 @@ import { Shield, Zap, Wrench, Globe, CheckCircle2, ArrowRight } from 'lucide-rea
 import HeroCarousel from '../components/HeroCarousel';
 import { categories, whyChooseUs, industries } from '../data/products';
 import { Link } from 'react-router-dom';
-import rdImg from '../assets/images/r-and-d.jpg';
-import hero1Img from '../assets/images/hero-1.jpg';
+import { heroSlides } from '../data/products';
+
+const factoryImg = '/images/Automatic Multipurpose Fryer.jpg';
+const noodlesImg = '/images/instant Noodles plant.jpg';
 
 const Home = () => {
   return (
@@ -24,7 +26,7 @@ const Home = () => {
             >
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src={rdImg} 
+                  src={factoryImg} 
                   alt="Industrial Machinery" 
                   className="w-full h-full object-cover"
                 />
@@ -91,7 +93,7 @@ const Home = () => {
               >
                 <div className="aspect-[16/10] overflow-hidden relative">
                   <img 
-                    src={product.image || hero1Img} 
+                    src={product.image || factoryImg} 
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                   />
@@ -148,7 +150,7 @@ const Home = () => {
             <div className="relative">
               <div className="aspect-square rounded-[4rem] overflow-hidden border-8 border-white/10 shadow-3xl">
                 <img 
-                  src={hero1Img} 
+                  src={noodlesImg} 
                   alt="Quality Control" 
                   className="w-full h-full object-cover"
                 />
@@ -239,7 +241,7 @@ const Home = () => {
             {industries.map((industry) => (
               <div key={industry.name} className="group relative aspect-[4/5] rounded-3xl overflow-hidden cursor-pointer">
                 <img 
-                  src={industry.image || hero1Img} 
+                  src={industry.image || factoryImg} 
                   alt={industry.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                 />
@@ -322,7 +324,7 @@ const Home = () => {
                 <Link to="/contact" className="bg-white text-[#1e3a8a] px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-50 transition-all shadow-xl">
                   Get a Free Consultation
                 </Link>
-                <a href="tel:+919800000000" className="bg-transparent border border-white/30 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all">
+                <a href="tel:+919810803491" className="bg-transparent border border-white/30 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all">
                   Contact Sales
                 </a>
               </div>

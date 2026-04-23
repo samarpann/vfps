@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Eye, Award, Users, Globe2, Building2 } from 'lucide-react';
 import ownerImg from '../assets/images/owner.jpg';
-import noodlesPlantImg from '../assets/images/noodles-plant.jpg';
+
+const noodlesPlantImg = '/images/instant Noodles plant.jpg';
 
 const About = () => {
   return (

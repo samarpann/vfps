@@ -73,8 +73,9 @@ const Footer = () => {
                 <MapPin className="text-[#1e3a8a]" size={24} />
               </div>
               <p className="text-slate-400 text-sm">
-                Plot No. 123, Industrial Area Phase II, <br />
-                New Delhi, India - 1100XX
+                Plot no. 08 khasra no.13 Mainapur indl. area <br />
+                Behind Vaishno Dharam kanta, <br />
+                Meerut Road, Ghaziabad U.P. 201003
               </p>
             </div>
             <div className="flex gap-4">
@@ -82,8 +83,9 @@ const Footer = () => {
                 <Phone className="text-[#1e3a8a]" size={24} />
               </div>
               <p className="text-slate-400 text-sm">
-                +91 98XXX XXXXX <br />
-                +91 99XXX XXXXX
+                +91 98108 03491 <br />
+                +91 74174 17435 <br />
+                +91 82850 12432
               </p>
             </div>
             <div className="flex gap-4">
@@ -91,8 +93,8 @@ const Footer = () => {
                 <Mail className="text-[#1e3a8a]" size={24} />
               </div>
               <p className="text-slate-400 text-sm">
-                info@vfp-system.com <br />
-                sales@vfp-system.com
+                vermafoodsales@gmail.com <br />
+                www.vermafoodsystem.in
               </p>
             </div>
           </div>

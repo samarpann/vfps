@@ -85,8 +85,9 @@ const Contact = () => {
                       <div>
                          <h3 className="text-xl font-extrabold text-slate-900 mb-2">Our Headquarters</h3>
                          <p className="text-slate-500 leading-relaxed max-w-xs">
-                           Plot No. 123, Industrial Area Phase II, <br />
-                           New Delhi, India - 1100XX
+                           Plot no. 08 khasra no.13 Mainapur indl. area <br />
+                           Behind Vaishno Dharam kanta, <br />
+                            Meerut Road, Ghaziabad U.P. 201003
                          </p>
                       </div>
                    </div>
@@ -98,8 +99,9 @@ const Contact = () => {
                       <div>
                          <h3 className="text-xl font-extrabold text-slate-900 mb-2">Direct Contact</h3>
                          <p className="text-slate-500 leading-relaxed">
-                           +91 98XXX XXXXX <br />
-                           +91 99XXX XXXXX
+                           +91 98108 03491 <br />
+                           +91 74174 17435 <br />
+                            +91 82850 12432
                          </p>
                       </div>
                    </div>
@@ -109,10 +111,10 @@ const Contact = () => {
                          <Mail size={32} />
                       </div>
                       <div>
-                         <h3 className="text-xl font-extrabold text-slate-900 mb-2">Email Inquiries</h3>
+                         <h3 className="text-xl font-extrabold text-slate-900 mb-2">Email & Web</h3>
                          <p className="text-slate-500 leading-relaxed">
-                           info@vfp-system.com <br />
-                           sales@vfp-system.com
+                           vermafoodsales@gmail.com <br />
+                           www.vermafoodsystem.in
                          </p>
                       </div>
                    </div>
