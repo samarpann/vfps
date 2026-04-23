@@ -9,18 +9,18 @@ const Contact = () => {
       <section className="bg-slate-900 text-white py-24 px-4 overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-[#1e3a8a]/20 skew-x-12 translate-x-1/2" />
         <div className="max-w-7xl mx-auto text-center relative z-10">
-           <motion.h1 
-             initial={{ y: 20, opacity: 0 }}
-             animate={{ y: 0, opacity: 1 }}
-             className="text-5xl md:text-7xl font-extrabold mb-6"
-           >
-             Let's Build Your <span className="text-blue-400">Plant</span>
-           </motion.h1>
+            <motion.h1 
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              className="text-6xl md:text-8xl font-black mb-6 leading-tight"
+            >
+              Let's Build Your <span className="text-blue-400">Plant</span>
+            </motion.h1>
            <motion.p 
              initial={{ y: 20, opacity: 0 }}
              animate={{ y: 0, opacity: 1 }}
              transition={{ delay: 0.2 }}
-             className="text-xl text-slate-400 max-w-2xl mx-auto"
+             className="text-2xl text-slate-300 max-w-3xl mx-auto font-medium"
            >
              Reach out to our engineering experts for customized machinery solutions and detailed price quotes.
            </motion.p>
@@ -41,21 +41,21 @@ const Contact = () => {
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                       <label className="text-xs font-black uppercase tracking-widest text-slate-400 ml-4">Full Name</label>
+                       <label className="text-sm font-black uppercase tracking-widest text-slate-400 ml-4">Full Name</label>
                        <input type="text" placeholder="John Doe" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" />
                     </div>
                     <div className="space-y-2">
-                       <label className="text-xs font-black uppercase tracking-widest text-slate-400 ml-4">Email Address</label>
+                       <label className="text-sm font-black uppercase tracking-widest text-slate-400 ml-4">Email Address</label>
                        <input type="email" placeholder="john@example.com" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                       <label className="text-xs font-black uppercase tracking-widest text-slate-400 ml-4">Phone Number</label>
+                       <label className="text-sm font-black uppercase tracking-widest text-slate-400 ml-4">Phone Number</label>
                        <input type="tel" placeholder="+91 XXXX XXXXX" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" />
                     </div>
                     <div className="space-y-2">
-                       <label className="text-xs font-black uppercase tracking-widest text-slate-400 ml-4">Interest</label>
+                       <label className="text-sm font-black uppercase tracking-widest text-slate-400 ml-4">Interest</label>
                        <select className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all">
                           <option>Select Plant Type</option>
                           <option>Potato Chips Plant</option>

@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import logoImg from '../assets/images/logo.png';
+import logoImg from '../assets/images/logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,14 +37,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-xl bg-white overflow-hidden shadow-md group-hover:scale-110 transition-transform">
+            <div className="w-16 h-16 rounded-xl bg-white overflow-hidden shadow-md group-hover:scale-110 transition-transform p-1">
               <img src={logoImg} alt="VFPS Logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
-              <span className={`text-2xl font-black tracking-tighter leading-none ${scrolled ? 'text-[#1e3a8a]' : 'text-white'}`}>
+              <span className={`text-4xl font-black tracking-tighter leading-none ${scrolled ? 'text-[#1e3a8a]' : 'text-white'}`}>
                 VFPS
               </span>
-              <span className={`text-[8px] font-bold uppercase tracking-[0.2em] ${scrolled ? 'text-gray-500' : 'text-gray-300'}`}>
+              <span className={`text-xs font-bold uppercase tracking-[0.2em] ${scrolled ? 'text-gray-500' : 'text-gray-300'}`}>
                 Verma Food Processing System
               </span>
             </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-[#1e3a8a] ${
+                className={`text-base font-bold transition-colors hover:text-[#1e3a8a] ${
                   location.pathname === link.path
                     ? 'text-[#1e3a8a]'
                     : scrolled ? 'text-gray-700' : 'text-white'

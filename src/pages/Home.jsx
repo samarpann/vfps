@@ -43,10 +43,10 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-[#1e3a8a] font-bold uppercase tracking-widest text-sm mb-4">Who We Are</h2>
-              <h3 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-                Verma Food Processing <span className="text-gray-400">System</span>
+              <h3 className="text-5xl md:text-6xl font-black text-slate-900 mb-8 leading-tight">
+                Verma Food Processing <span className="text-[#1e3a8a]">System</span>
               </h3>
-              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+              <p className="text-xl text-slate-700 mb-8 leading-relaxed font-medium">
                 Established in 2008, VFPS has been at the forefront of manufacturing high-grade food processing machinery. We specialize in SS 304 food-grade plants that prioritize low oil consumption, high automation, and peak durability.
               </p>
               <div className="space-y-4 mb-10">
@@ -75,8 +75,8 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 px-4">
             <h2 className="text-[#1e3a8a] font-bold uppercase tracking-widest text-sm mb-4">Our Expertise</h2>
-            <h3 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Complete Production Plants</h3>
-            <p className="text-slate-600 max-w-2xl mx-auto">
+            <h3 className="text-5xl md:text-6xl font-black text-slate-900 mb-6">Complete Production Plants</h3>
+            <p className="text-xl text-slate-700 max-w-3xl mx-auto font-medium">
               We provide end-to-end solutions for various snack and food processing needs, custom-built to your requirements.
             </p>
           </div>
@@ -130,7 +130,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <h2 className="text-blue-300 font-bold uppercase tracking-widest text-sm mb-4">Why VFPS?</h2>
-              <h3 className="text-4xl md:text-5xl font-extrabold mb-10 leading-tight">Setting Benchmark in Industrial Standards</h3>
+              <h3 className="text-5xl md:text-6xl font-black mb-10 leading-tight">Setting Benchmark in Industrial Standards</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {whyChooseUs.map((item) => (
                   <div key={item.title} className="space-y-4">
@@ -183,8 +183,8 @@ const Home = () => {
                className="lg:w-1/2 order-2 lg:order-1"
             >
               <h2 className="text-[#1e3a8a] font-bold uppercase tracking-widest text-sm mb-4">Innovation & Excellence</h2>
-              <h3 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Continuous Innovation in Food Processing Technology</h3>
-              <p className="text-lg text-slate-600 mb-10 leading-relaxed">
+              <h3 className="text-5xl md:text-6xl font-black text-slate-900 mb-8 leading-tight">Continuous Innovation in Food Processing Technology</h3>
+              <p className="text-xl text-slate-700 mb-10 leading-relaxed font-medium">
                 Our dedicated R&D wing works tirelessly to integrate the latest technological advancements in industrial machinery. From thermal efficiency to noise reduction, we engineer components that make your production smoother and more profitable.
               </p>
               <div className="grid grid-cols-2 gap-8 mb-10">
@@ -316,8 +316,8 @@ const Home = () => {
               viewport={{ once: true }}
               className="relative z-10"
             >
-              <h3 className="text-3xl md:text-5xl font-extrabold text-white mb-8">Ready to Optimize Your Production?</h3>
-              <p className="text-xl text-blue-100/70 mb-12 max-w-2xl mx-auto font-light">
+              <h3 className="text-4xl md:text-6xl font-black text-white mb-8">Ready to Optimize Your Production?</h3>
+              <p className="text-2xl text-blue-50 font-medium mb-12 max-w-3xl mx-auto">
                 Get a free consultation from our experts and find the perfect machinery for your business needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">

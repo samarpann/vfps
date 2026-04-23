@@ -54,7 +54,7 @@ const HeroCarousel = () => {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                className="inline-block text-[#1e3a8a] bg-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6"
+                className="inline-block text-[#1e3a8a] bg-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-6 shadow-lg"
               >
                 Established 2008
               </motion.span>
@@ -62,7 +62,7 @@ const HeroCarousel = () => {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.7 }}
-                className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-tight"
+                className="text-5xl md:text-8xl font-black text-white mb-6 leading-tight drop-shadow-2xl"
               >
                 {heroSlides[current].title}
               </motion.h1>
@@ -70,7 +70,7 @@ const HeroCarousel = () => {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.9 }}
-                className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light"
+                className="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto font-medium drop-shadow-lg"
               >
                 {heroSlides[current].subtitle}
               </motion.p>
