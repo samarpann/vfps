@@ -41,10 +41,10 @@ const Navbar = () => {
               <img src={logoImg} alt="VFPS Logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
-              <span className={`text-4xl font-black tracking-tighter leading-none ${scrolled ? 'text-[#1e3a8a]' : 'text-white'}`}>
+              <span className={`text-4xl font-black tracking-tighter leading-none ${scrolled ? 'text-black' : 'text-black'}`}>
                 VFPS
               </span>
-              <span className={`text-xs font-bold uppercase tracking-[0.2em] ${scrolled ? 'text-gray-500' : 'text-gray-300'}`}>
+              <span className={`text-xs font-bold uppercase tracking-[0.2em] ${scrolled ? 'text-black' : 'text-black'}`}>
                 Verma Food Processing System
               </span>
             </div>
@@ -59,7 +59,7 @@ const Navbar = () => {
                 className={`text-base font-bold transition-colors hover:text-[#1e3a8a] ${
                   location.pathname === link.path
                     ? 'text-[#1e3a8a]'
-                    : scrolled ? 'text-gray-700' : 'text-white'
+                    : scrolled ? 'text-black' : 'text-black'
                 }`}
               >
                 {link.name}
@@ -79,7 +79,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`${scrolled ? 'text-gray-900' : 'text-white'}`}
+              className={`${scrolled ? 'text-black' : 'text-black'}`}
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -102,7 +102,7 @@ const Navbar = () => {
                   key={link.name}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-4 text-base font-medium text-gray-700 hover:text-[#1e3a8a] hover:bg-gray-50 rounded-lg"
+                  className="block px-3 py-4 text-base font-medium text-black hover:text-[#1e3a8a] hover:bg-gray-50 rounded-lg"
                 >
                   {link.name}
                 </Link>

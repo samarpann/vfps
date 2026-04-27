@@ -41,21 +41,21 @@ const Contact = () => {
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                       <label className="text-sm font-black uppercase tracking-widest text-slate-400 ml-4">Full Name</label>
+                       <label className="text-sm font-black uppercase tracking-widest text-slate-700 ml-4">Full Name</label>
                        <input type="text" placeholder="John Doe" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" />
                     </div>
                     <div className="space-y-2">
-                       <label className="text-sm font-black uppercase tracking-widest text-slate-400 ml-4">Email Address</label>
+                       <label className="text-sm font-black uppercase tracking-widest text-slate-700 ml-4">Email Address</label>
                        <input type="email" placeholder="john@example.com" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                       <label className="text-sm font-black uppercase tracking-widest text-slate-400 ml-4">Phone Number</label>
+                       <label className="text-sm font-black uppercase tracking-widest text-slate-700 ml-4">Phone Number</label>
                        <input type="tel" placeholder="+91 XXXX XXXXX" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" />
                     </div>
                     <div className="space-y-2">
-                       <label className="text-sm font-black uppercase tracking-widest text-slate-400 ml-4">Interest</label>
+                       <label className="text-sm font-black uppercase tracking-widest text-slate-700 ml-4">Interest</label>
                        <select className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all">
                           <option>Select Plant Type</option>
                           <option>Potato Chips Plant</option>
@@ -66,7 +66,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="space-y-2">
-                     <label className="text-xs font-black uppercase tracking-widest text-slate-400 ml-4">Your Message</label>
+                     <label className="text-xs font-black uppercase tracking-widest text-slate-700 ml-4">Your Message</label>
                      <textarea rows="5" placeholder="Tell us about your project requirements..." className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all"></textarea>
                   </div>
                   <button className="w-full bg-[#1e3a8a] text-white py-5 rounded-2xl font-black text-lg shadow-xl hover:bg-blue-800 transition-all active:scale-95 flex items-center justify-center gap-3">
@@ -84,7 +84,7 @@ const Contact = () => {
                       </div>
                       <div>
                          <h3 className="text-xl font-extrabold text-slate-900 mb-2">Our Headquarters</h3>
-                         <p className="text-slate-500 leading-relaxed max-w-xs">
+                         <p className="text-slate-900 font-medium leading-relaxed max-w-xs">
                            Plot no. 08 khasra no.13 Mainapur indl. area <br />
                            Behind Vaishno Dharam kanta, <br />
                             Meerut Road, Ghaziabad U.P. 201003
@@ -98,7 +98,7 @@ const Contact = () => {
                       </div>
                       <div>
                          <h3 className="text-xl font-extrabold text-slate-900 mb-2">Direct Contact</h3>
-                         <p className="text-slate-500 leading-relaxed">
+                         <p className="text-slate-900 font-bold leading-relaxed">
                            +91 98108 03491 <br />
                            +91 74174 17435 <br />
                             +91 82850 12432
@@ -112,7 +112,7 @@ const Contact = () => {
                       </div>
                       <div>
                          <h3 className="text-xl font-extrabold text-slate-900 mb-2">Email & Web</h3>
-                         <p className="text-slate-500 leading-relaxed">
+                         <p className="text-slate-900 font-medium leading-relaxed">
                            vermafoodsales@gmail.com <br />
                            www.vermafoodsystem.in
                          </p>
