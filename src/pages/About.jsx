@@ -32,7 +32,7 @@ const About = () => {
             transition={{ delay: 0.1 }}
             className="text-5xl md:text-8xl font-black mb-6 tracking-tighter"
           >
-            Verma Food <br/> <span className="text-blue-400">Processing</span> System
+            Verma Food <br/> Processing System
           </motion.h1>
           <motion.p 
             initial={{ y: 20, opacity: 0 }}
@@ -58,7 +58,7 @@ const About = () => {
               <div>
                 <h2 className="text-[#1e3a8a] font-black uppercase tracking-[0.2em] text-sm mb-4">Who We Are</h2>
                 <h3 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-                  Driving Innovation in <span className="text-blue-600">Food Technology</span>
+                  Driving Innovation in Food Technology
                 </h3>
               </div>
               <div className="space-y-6 text-lg text-slate-600 leading-relaxed">

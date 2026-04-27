@@ -7,7 +7,7 @@ const Industries = () => {
     <div className="pt-24 min-h-screen bg-slate-50">
       <section className="bg-white py-24 px-4">
         <div className="max-w-7xl mx-auto text-center">
-           <h1 className="text-4xl md:text-7xl font-extrabold text-slate-900 mb-8">Industries We <span className="text-[#1e3a8a]">Power</span></h1>
+           <h1 className="text-4xl md:text-7xl font-extrabold text-slate-900 mb-8">Industries We Power</h1>
            <p className="text-xl text-slate-500 max-w-3xl mx-auto font-light">
              From local snack makers to global conglomerates, we provide the machinery that fuels diverse food industries worldwide.
            </p>

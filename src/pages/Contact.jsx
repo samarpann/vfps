@@ -1,8 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    interest: 'Select Plant Type',
+    message: ''
+  });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus('sending');
+    
+    // Simulate email sending
+    setTimeout(() => {
+      setStatus('success');
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        interest: 'Select Plant Type',
+        message: ''
+      });
+    }, 1500);
+  };
+
   return (
     <div className="pt-24 min-h-screen bg-white">
       {/* Hero */}
@@ -14,7 +44,7 @@ const Contact = () => {
               animate={{ y: 0, opacity: 1 }}
               className="text-6xl md:text-8xl font-black mb-6 leading-tight"
             >
-              Let's Build Your <span className="text-blue-400">Plant</span>
+              Let's Build Your Plant
             </motion.h1>
            <motion.p 
              initial={{ y: 20, opacity: 0 }}
@@ -38,26 +68,55 @@ const Contact = () => {
                 className="bg-white p-10 md:p-16 rounded-[4rem] shadow-3xl border border-slate-100"
               >
                 <h2 className="text-3xl font-extrabold text-slate-900 mb-10">Inquiry Form</h2>
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                        <label className="text-sm font-black uppercase tracking-widest text-slate-700 ml-4">Full Name</label>
-                       <input type="text" placeholder="John Doe" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" />
+                       <input 
+                         type="text" 
+                         name="fullName"
+                         value={formData.fullName}
+                         onChange={handleChange}
+                         placeholder="John Doe" 
+                         required
+                         className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" 
+                       />
                     </div>
                     <div className="space-y-2">
                        <label className="text-sm font-black uppercase tracking-widest text-slate-700 ml-4">Email Address</label>
-                       <input type="email" placeholder="john@example.com" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" />
+                       <input 
+                         type="email" 
+                         name="email"
+                         value={formData.email}
+                         onChange={handleChange}
+                         placeholder="john@example.com" 
+                         required
+                         className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" 
+                       />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                        <label className="text-sm font-black uppercase tracking-widest text-slate-700 ml-4">Phone Number</label>
-                       <input type="tel" placeholder="+91 XXXX XXXXX" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" />
+                       <input 
+                         type="tel" 
+                         name="phone"
+                         value={formData.phone}
+                         onChange={handleChange}
+                         placeholder="+91 XXXX XXXXX" 
+                         required
+                         className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all" 
+                       />
                     </div>
                     <div className="space-y-2">
                        <label className="text-sm font-black uppercase tracking-widest text-slate-700 ml-4">Interest</label>
-                       <select className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all">
-                          <option>Select Plant Type</option>
+                       <select 
+                         name="interest"
+                         value={formData.interest}
+                         onChange={handleChange}
+                         className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all"
+                       >
+                          <option disabled>Select Plant Type</option>
                           <option>Potato Chips Plant</option>
                           <option>Namkeen Plant</option>
                           <option>Extruder Lines</option>
@@ -67,11 +126,27 @@ const Contact = () => {
                   </div>
                   <div className="space-y-2">
                      <label className="text-xs font-black uppercase tracking-widest text-slate-700 ml-4">Your Message</label>
-                     <textarea rows="5" placeholder="Tell us about your project requirements..." className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all"></textarea>
+                     <textarea 
+                       rows="5" 
+                       name="message"
+                       value={formData.message}
+                       onChange={handleChange}
+                       placeholder="Tell us about your project requirements..." 
+                       required
+                       className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#1e3a8a] transition-all"
+                     ></textarea>
                   </div>
-                  <button className="w-full bg-[#1e3a8a] text-white py-5 rounded-2xl font-black text-lg shadow-xl hover:bg-blue-800 transition-all active:scale-95 flex items-center justify-center gap-3">
-                    Send Inquiry <Send size={20} />
-                  </button>
+                   <button 
+                     type="submit"
+                     disabled={status === 'sending'}
+                     className="w-full bg-[#1e3a8a] text-white py-5 rounded-2xl font-black text-lg shadow-xl hover:bg-blue-800 transition-all active:scale-95 flex items-center justify-center gap-3 disabled:opacity-50"
+                   >
+                     {status === 'sending' ? 'Sending...' : status === 'success' ? 'Message Sent!' : 'Send Inquiry'}
+                     <Send size={20} />
+                   </button>
+                   {status === 'success' && (
+                     <p className="text-green-600 text-center font-bold mt-4">Thank you! We will get back to you soon.</p>
+                   )}
                 </form>
               </motion.div>
 

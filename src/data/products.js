@@ -87,19 +87,19 @@ export const heroSlides = [
   {
     title: "Revolutionizing Food Processing",
     subtitle: "High-performance automated machines for the global snack industry.",
-    image: "/images/hero-slide-1.jpeg",
+    image: "/crousel/slide1.jpg",
     cta: "Explore Our Plants"
   },
   {
     title: "SS 304 Food Grade Precision",
     subtitle: "Built with the highest standards of hygiene and durability in mind.",
-    image: "/images/hero-slide-2.jpeg",
+    image: "/crousel/slide2.jpg",
     cta: "View Catalog"
   },
   {
     title: "High Production, Low Consumption",
     subtitle: "Engineered for maximum efficiency with minimum oil and fuel usage.",
-    image: "/images/Automatic Multipurpose Fryer.jpg",
+    image: "/crousel/slide3.jpg",
     cta: "Get a Quote"
   }
 ];
