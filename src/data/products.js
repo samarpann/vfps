@@ -144,6 +144,70 @@ export const categories = [
     image: "/images-2/Slurry Kettle.jpeg",
     features: ["Jacketed Heating", "Agitator", "Temperature Control"],
     specs: { capacity: "100-500 Liters", power: "10-30 kW", area: "2x2 meters" }
+  },
+  {
+    id: "cleated-belt-conveyor",
+    name: "Cleated Belt Conveyor",
+    description: "Inclined conveying system for lifting materials without rollback.",
+    image: "/image-3/Cleated Belt Conveyor.jpg",
+    features: ["Food Grade Belt", "Customizable Cleats", "Variable Speed"],
+    specs: { capacity: "Up to 5 tons/hr", power: "1-3 kW", area: "Variable" }
+  },
+  {
+    id: "cooling-conveyor",
+    name: "Cooling Conveyor",
+    description: "Extended conveyor system with ambient or forced air cooling.",
+    image: "/image-3/Cooling Conveyor.jpg",
+    features: ["Mesh/Belt Options", "High Heat Dissipation", "Continuous Flow"],
+    specs: { capacity: "Sync with line", power: "2-5 kW", area: "Variable" }
+  },
+  {
+    id: "exhaust-conveyor",
+    name: "Exhaust Conveyor",
+    description: "Specialized conveyor for removing fumes or moisture during transit.",
+    image: "/image-3/Exaust Conveyor.jpg",
+    features: ["Integrated Hoods", "Corrosion Resistant", "Durable Build"],
+    specs: { capacity: "Sync with line", power: "2-4 kW", area: "Variable" }
+  },
+  {
+    id: "modular-conveyor",
+    name: "Modular Conveyor",
+    description: "Highly flexible modular plastic belt conveyor for complex routing.",
+    image: "/image-3/Modular Conveyor 2.jpg",
+    features: ["Easy Interlocking", "Low Friction", "Quick Cleaning"],
+    specs: { capacity: "Variable", power: "1-3 kW", area: "Variable" }
+  },
+  {
+    id: "pu-conveyor",
+    name: "PU Conveyor",
+    description: "Polyurethane (PU) belt conveyor for hygienic food handling.",
+    image: "/image-3/PU Conveyor.jpg",
+    features: ["FDA Approved Belt", "Smooth Surface", "Oil Resistant"],
+    specs: { capacity: "Up to 3 tons/hr", power: "1-2 kW", area: "Variable" }
+  },
+  {
+    id: "rubber-belt-conveyor",
+    name: "Rubber Belt Conveyor",
+    description: "Heavy-duty rubber belt conveyor for bulk material transport.",
+    image: "/image-3/Rubber Belt Conveyor.jpg",
+    features: ["High Tensile Strength", "Abrasion Resistant", "Long Span"],
+    specs: { capacity: "Up to 10 tons/hr", power: "3-10 kW", area: "Variable" }
+  },
+  {
+    id: "screw-conveyor",
+    name: "Screw Conveyor",
+    description: "Enclosed helical screw conveyor for moving powders and granules.",
+    image: "/image-3/Screw-Conveyor.jpg",
+    features: ["Dust-Free Transport", "SS 304 Construction", "Consistent Feed"],
+    specs: { capacity: "Up to 5 tons/hr", power: "2-5 kW", area: "Variable" }
+  },
+  {
+    id: "wiremesh-conveyor",
+    name: "Wiremesh Conveyor",
+    description: "Stainless steel wiremesh conveyor ideal for baking, frying, and cooling.",
+    image: "/image-3/Wiremesh Conveyor.JPG",
+    features: ["High Temp Resistance", "Excellent Drainage", "SS 304 Mesh"],
+    specs: { capacity: "Sync with line", power: "2-7 kW", area: "Variable" }
   }
 ];
 
