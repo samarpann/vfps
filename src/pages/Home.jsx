@@ -6,7 +6,7 @@ import { categories, whyChooseUs, industries } from '../data/products';
 import { Link } from 'react-router-dom';
 import { heroSlides } from '../data/products';
 
-const factoryImg = '/images/Automatic Multipurpose Fryer.jpg';
+const factoryImg = '/images/ss-3.jpeg';
 const noodlesImg = '/images/instant Noodles plant.jpg';
 
 const Home = () => {
@@ -44,7 +44,7 @@ const Home = () => {
             >
               <h2 className="text-[#1e3a8a] font-bold uppercase tracking-widest text-sm mb-4">Who We Are</h2>
               <h3 className="text-5xl md:text-6xl font-black text-slate-900 mb-8 leading-tight">
-                Verma Food Processing System
+                Verma Food Processing <span className="text-slate-900">System</span>
               </h3>
               <p className="text-xl text-slate-700 mb-8 leading-relaxed font-medium">
                 Established in 2008, VFPS has been at the forefront of manufacturing high-grade food processing machinery. We specialize in SS 304 food-grade plants that prioritize low oil consumption, high automation, and peak durability.

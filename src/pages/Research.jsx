@@ -74,7 +74,7 @@ const Research = () => {
                 <Microscope size={16} /> Our Philosophy
               </div>
               <h3 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-                Continuous Innovation in Every Component
+                Continuous Innovation in <span className="text-blue-600 underline underline-offset-8">Every Component</span>
               </h3>
               <p className="text-lg text-slate-600 leading-relaxed">
                 At VFPS, R&D isn't just a department—it's our foundation. We spend hundreds of hours every month researching material sciences, thermal dynamics, and mechanical automation to ensure our clients stay ahead of the competition.
@@ -171,7 +171,7 @@ const Research = () => {
              <div className="w-20 h-20 rounded-3xl bg-white/10 flex items-center justify-center text-blue-300">
                 <Lightbulb size={48} />
              </div>
-             <h2 className="text-4xl md:text-6xl font-black tracking-tighter">Your Production, Upgraded.</h2>
+             <h2 className="text-4xl md:text-6xl font-black tracking-tighter">Your Production, <span className="text-blue-400 italic">Upgraded.</span></h2>
              <p className="text-xl text-blue-100/70 max-w-3xl font-light">
                The machines we build today are the result of years of research. We don't just sell hardware; we provide the competitive edge of advanced engineering.
              </p>

@@ -10,7 +10,7 @@ const ProductList = () => {
       {/* Header */}
       <section className="bg-slate-50 py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
-           <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6">Our Machinery Solutions</h1>
+           <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6">Our Machinery <span className="text-[#1e3a8a]">Solutions</span></h1>
            <p className="text-xl text-slate-500 max-w-3xl mx-auto">
              Explore our range of high-performance food processing plants designed for maximum efficiency and ROI.
            </p>

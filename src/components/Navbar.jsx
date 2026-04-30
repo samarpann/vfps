@@ -41,10 +41,10 @@ const Navbar = () => {
               <img src={logoImg} alt="VFPS Logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
-              <span className={`text-4xl font-black tracking-tighter leading-none ${scrolled ? 'text-black' : 'text-black'}`}>
+              <span className="text-4xl font-black tracking-tighter leading-none text-[#1e3a8a]">
                 VFPS
               </span>
-              <span className={`text-xs font-bold uppercase tracking-[0.2em] ${scrolled ? 'text-black' : 'text-black'}`}>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-gray-900">
                 Verma Food Processing System
               </span>
             </div>
@@ -59,7 +59,7 @@ const Navbar = () => {
                 className={`text-base font-bold transition-colors hover:text-[#1e3a8a] ${
                   location.pathname === link.path
                     ? 'text-[#1e3a8a]'
-                    : scrolled ? 'text-black' : 'text-black'
+                    : 'text-gray-900'
                 }`}
               >
                 {link.name}
@@ -79,7 +79,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`${scrolled ? 'text-black' : 'text-black'}`}
+              className="text-gray-900"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>

@@ -12,7 +12,7 @@ const Clients = () => {
           </svg>
         </div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
-           <h1 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter">GLOBAL TRUST</h1>
+           <h1 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter">GLOBAL <span className="text-blue-500">TRUST</span></h1>
            <p className="text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
              Partnering with industry leaders to deliver excellence in every corner of the world. 500+ successful installations across 25+ countries.
            </p>

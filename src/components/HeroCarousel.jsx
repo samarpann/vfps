@@ -38,11 +38,11 @@ const HeroCarousel = () => {
               muted
               loop
               playsInline
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-contain"
             />
           ) : (
             <div 
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-[10000ms] scale-110"
+              className="absolute inset-0 bg-[length:100%_100%] bg-no-repeat bg-center transition-transform duration-[10000ms]"
               style={{ backgroundImage: `url(${heroSlides[current].image})` }}
             />
           )}
