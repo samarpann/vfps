@@ -101,9 +101,14 @@ const ProductDetail = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-10">
-               <button className="flex-1 inline-flex items-center justify-center gap-3 bg-[#1e3a8a] text-white py-6 rounded-3xl font-extrabold text-lg shadow-2xl hover:bg-blue-800 transition-all active:scale-95">
+               <a 
+                  href={`https://wa.me/919810803491?text=${encodeURIComponent(`Hello, I would like to request a quote for the ${product.name}.`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-3 bg-[#1e3a8a] text-white py-6 rounded-3xl font-extrabold text-lg shadow-2xl hover:bg-blue-800 transition-all active:scale-95"
+               >
                   <MessageSquare size={24} /> Request a Quote
-               </button>
+               </a>
                <button className="flex-1 inline-flex items-center justify-center gap-3 bg-slate-900 text-white py-6 rounded-3xl font-extrabold text-lg shadow-2xl hover:bg-slate-800 transition-all active:scale-95">
                   <Download size={24} /> Full Catalogue
                </button>

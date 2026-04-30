@@ -28,9 +28,9 @@ const Research = () => {
   ];
 
   const rndVidoes = [
-    { src: "/videos/video-4.mp4", title: "Core Engineering Lab", desc: "Testing structural integrity and heat endurance." },
-    { src: "/videos/video-5.mp4", title: "Continuous Frying System", desc: "R&D on oil flow and temperature consistency." },
-    { src: "/videos/vidoe-6.mp4", title: "Automated Seasoning", desc: "Innovation in precise flavor distribution." },
+    { src: "/video-2/1.mp4", title: "Core Engineering Lab", desc: "Testing structural integrity and heat endurance." },
+    { src: "/video-2/2.mp4", title: "Continuous Frying System", desc: "R&D on oil flow and temperature consistency." },
+    { src: "/video-2/3.mp4", title: "Automated Seasoning", desc: "Innovation in precise flavor distribution." },
     { src: "/videos/video-7.mp4", title: "Packaging Integration", desc: "Seamless flow from production to end-line." }
   ];
 

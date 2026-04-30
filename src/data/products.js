@@ -2,26 +2,26 @@
 
 export const categories = [
   {
-    id: "automatic-multipurpose-fryer",
-    name: "Automatic Multipurpose Fryer",
-    description: "Advanced frying system for various pellet and extruded snacks.",
-    image: "/images/Automatic Multipurpose Fryer.jpg",
+    id: "automatic-continuous-fryer",
+    name: "Automatic Continuous Fryer",
+    description: "Advanced continuous frying system for various pellet and extruded snacks.",
+    image: "/images-2/Automatic Continuous Fryer.jpeg",
     features: ["Heat Exchanger", "Continuous Filtration", "Precision Temp"],
     specs: { capacity: "200-500 kg/hr", power: "Variable", area: "10x5 meters" }
   },
   {
-    id: "automatic-mumra-plant",
-    name: "Automatic Mumra Plant",
-    description: "Complete processing line for high-quality expanded rice (Mumra).",
-    image: "/images/Automatic Mumra Plant.jpg",
+    id: "automatic-murmura-plant",
+    name: "Automatic Murmura Plant",
+    description: "Complete processing line for high-quality expanded rice (Murmura).",
+    image: "/images-2/Automatic Murmura Plant.jpeg",
     features: ["Steam Heating", "Uniform Roasting", "Full Automation"],
     specs: { capacity: "150-400 kg/hr", power: "25-50 kW", area: "15x8 meters" }
   },
   {
-    id: "bucket-elevator",
-    name: "Bucket Elevator",
+    id: "z-type-bucket-elevator",
+    name: "Z-Type Bucket Elevator",
     description: "Hygienic material handling and vertical conveying system.",
-    image: "/images/Bucket Elevator.jpg",
+    image: "/images-2/Z-Type Bucket Elevator.jpeg",
     features: ["Food Grade Buckets", "Variable Speed", "Easy Clean"],
     specs: { capacity: "Up to 2 tons/hr", power: "1.5-3 kW", area: "Vertical" }
   },
@@ -29,57 +29,121 @@ export const categories = [
     id: "circular-batch-fryer",
     name: "Circular Batch Fryer",
     description: "High-efficiency circular fryer for batch production of namkeens and snacks.",
-    image: "/images/Circular Barch Fryer.jpg",
+    image: "/images-2/Circular Batch Fryer.jpeg",
     features: ["Even Heat Distribution", "Easy Drain", "Low Oil Retention"],
     specs: { capacity: "100-300 kg/batch", power: "20-40 kW", area: "6x6 meters" }
   },
   {
-    id: "flavoring-drum",
-    name: "Flavoring Drum & Applicator",
+    id: "flavouring-system",
+    name: "Flavouring System",
     description: "Continuous coating system for uniform spice and flavor distribution.",
-    image: "/images/Flavoring Drum with Spice Applicator.jpg",
+    image: "/images-2/Flavouring System.jpeg",
     features: ["Mist Spraying", "Variable Rotation", "Powder Feeder"],
     specs: { capacity: "Sync with line", power: "2-5 kW", area: "5x3 meters" }
   },
   {
-    id: "fryums-line-hydro",
-    name: "Fryums Line (with Hydro)",
+    id: "automatic-fryums-plant",
+    name: "Automatic Fryums Plant",
     description: "Complete 2D/3D pellet processing with moisture control units.",
-    image: "/images/Fryums Line With Hydro.jpg",
+    image: "/images-2/Automatic Fryums Plant.jpeg",
     features: ["Hydro-extractor", "Continuous Dryer", "Multi-stage Frying"],
     specs: { capacity: "100-500 kg/hr", power: "30-60 kW", area: "25x10 meters" }
   },
   {
-    id: "instant-noodles-combine-roller",
-    name: "Instant Noodles Combine Roller",
-    description: "High-speed precision rolling system for uniform noodle sheet formation.",
-    image: "/images/Instant Noodles Combine Roller.jpg",
-    features: ["Multi-stage Rolling", "Auto Thickness Control", "SS 304 Rollers"],
-    specs: { capacity: "200-800 kg/hr", power: "30-60 kW", area: "15x5 meters" }
+    id: "automatic-fryums-plant-without-hydro",
+    name: "Automatic Fryums Plant Without Hydro",
+    description: "Complete 2D/3D pellet processing system without hydro-extraction.",
+    image: "/images-2/Automatic Fryums Plant Without Hydro.jpeg",
+    features: ["Continuous Frying", "Oil Filtration", "Space Efficient"],
+    specs: { capacity: "100-300 kg/hr", power: "25-50 kW", area: "20x8 meters" }
   },
   {
-    id: "puff-extruder",
-    name: "Puff Extruder",
+    id: "corn-puff-extruder",
+    name: "Corn Puff Extruder",
     description: "Specialized extruder for corn puffs, rice puffs, and similar snacks.",
-    image: "/images/Puff Extruder With mixture.jpg",
+    image: "/images-2/Corn Puff Extruder.jpeg",
     features: ["Adjustable Die", "High Throughput", "Low Power"],
     specs: { capacity: "100-400 kg/hr", power: "20-45 kW", area: "8x4 meters" }
+  },
+  {
+    id: "automatic-corn-puff-plant",
+    name: "Automatic Corn Puff Plant",
+    description: "Complete automated line for manufacturing corn puffs and extruded snacks.",
+    image: "/images-2/Automatic Corn Puff Plant.jpeg",
+    features: ["Extrusion", "Baking/Frying", "Flavouring"],
+    specs: { capacity: "150-500 kg/hr", power: "40-80 kW", area: "30x10 meters" }
   },
   {
     id: "rectangular-batch-fryer",
     name: "Rectangular Batch Fryer",
     description: "Industrial rectangular fryer for large-scale snack and namkeen production.",
-    image: "/images/Rectangular Batch Fryer 3.jpg",
+    image: "/images-2/Rectangular Batch Fryer.jpeg",
     features: ["Stainless Steel", "Gas/Electric", "Uniform Frying"],
     specs: { capacity: "200-500 kg/batch", power: "30-60 kW", area: "8x5 meters" }
   },
   {
-    id: "instant-noodles-plant",
-    name: "Instant Noodles Plant",
-    description: "High-speed automated noodle production with precision rolling.",
-    image: "/images/instant Noodles plant.jpg",
+    id: "automatic-hakka-noodles-plant",
+    name: "Automatic Hakka Noodles Plant",
+    description: "High-speed automated noodle production with precision rolling and steaming.",
+    image: "/images-2/Automatic Hakka Noodles Plant.jpeg",
     features: ["Combine Roller", "Steam Cooking", "Auto Folding"],
     specs: { capacity: "200-800 kg/hr", power: "60-120 kW", area: "40x15 meters" }
+  },
+  {
+    id: "automatic-potato-chips-plant",
+    name: "Automatic Potato Chips Plant",
+    description: "Complete end-to-end plant for processing fresh potatoes into crispy chips.",
+    image: "/images-2/Automatic Potato Chips Plant.jpeg",
+    features: ["Peeling & Slicing", "Blanching", "Continuous Frying"],
+    specs: { capacity: "200-1000 kg/hr", power: "50-100 kW", area: "40x12 meters" }
+  },
+  {
+    id: "automatic-besan-extruder",
+    name: "Automatic Besan Extruder",
+    description: "Advanced extruder for producing besan-based snacks like sev and bhujia.",
+    image: "/images-2/Automatic Besan Extruder.jpeg",
+    features: ["Precision Dies", "Continuous Operation", "Easy Cleaning"],
+    specs: { capacity: "100-300 kg/hr", power: "15-30 kW", area: "5x3 meters" }
+  },
+  {
+    id: "bhujiya-extruder",
+    name: "Bhujiya Extruder",
+    description: "Specialized extrusion system for authentic bhujiya production.",
+    image: "/images-2/Bhujiya Extruder.jpeg",
+    features: ["Fine Extrusion", "High Speed", "SS 304 Build"],
+    specs: { capacity: "100-250 kg/hr", power: "10-25 kW", area: "4x3 meters" }
+  },
+  {
+    id: "cutting-roller",
+    name: "Cutting Roller",
+    description: "Precision cutting machinery for shaping dough and extruded snacks.",
+    image: "/images-2/Cutting Roller.jpeg",
+    features: ["Adjustable Speed", "Multiple Shapes", "Safety Guards"],
+    specs: { capacity: "Sync with line", power: "2-5 kW", area: "2x2 meters" }
+  },
+  {
+    id: "dough-mixture",
+    name: "Dough Mixture",
+    description: "Heavy-duty industrial mixer for preparing consistent snack dough.",
+    image: "/images-2/Dough Mixture.jpeg",
+    features: ["High Torque", "Uniform Mixing", "Tilting Mechanism"],
+    specs: { capacity: "50-200 kg/batch", power: "5-15 kW", area: "3x3 meters" }
+  },
+  {
+    id: "malli-machine",
+    name: "Malli Machine",
+    description: "Efficient machine for specialized regional snack preparation.",
+    image: "/images-2/Malli Machine.jpeg",
+    features: ["High Durability", "Consistent Output", "Low Maintenance"],
+    specs: { capacity: "100-200 kg/hr", power: "5-10 kW", area: "4x3 meters" }
+  },
+  {
+    id: "slurry-kettle",
+    name: "Slurry Kettle",
+    description: "Heated mixing kettle for preparing flavouring slurries and syrups.",
+    image: "/images-2/Slurry Kettle.jpeg",
+    features: ["Jacketed Heating", "Agitator", "Temperature Control"],
+    specs: { capacity: "100-500 Liters", power: "10-30 kW", area: "2x2 meters" }
   }
 ];
 
