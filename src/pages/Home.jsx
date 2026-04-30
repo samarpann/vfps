@@ -264,9 +264,9 @@ const Home = () => {
            </div>
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { src: "/videos/video-5.mp4", title: "Continuous Frying System" },
-                { src: "/videos/video-7.mp4", title: "Automated Conveying" },
-                { src: "/videos/vidoe-6.mp4", title: "Flavoring & Seasoning" }
+                { src: "/video-2/1.mp4", title: "Continuous Frying System" },
+                { src: "/video-2/2.mp4", title: "Automated Conveying" },
+                { src: "/video-2/3.mp4", title: "Flavoring & Seasoning" }
               ].map((vid, idx) => (
                 <div key={idx} className="space-y-4">
                   <div className="rounded-3xl overflow-hidden shadow-xl aspect-video bg-black">

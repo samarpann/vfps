@@ -41,14 +41,38 @@ const Clients = () => {
         </div>
       </section>
 
-      {/* Client List Placeholder */}
+      {/* Client Logos */}
       <section className="py-24 bg-slate-50">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-center text-slate-400 uppercase tracking-[0.3em] font-black text-xs mb-20">Our Prestigious Partners</h2>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 opacity-40 grayscale group">
-               {['HALDIRAM', 'BALAJI', 'PEPSICO', 'BIKAJI', 'PRATAAP', 'AMUL', 'MOTHER DAIRY', 'NESTLE'].map(name => (
-                 <div key={name} className="flex items-center justify-center p-12 bg-white rounded-[2rem] shadow-sm hover:scale-110 hover:opacity-100 hover:grayscale-0 transition-all duration-500 cursor-pointer">
-                    <span className="text-3xl font-black text-slate-800">{name}</span>
+            <h2 className="text-center text-slate-900 font-black text-4xl md:text-5xl mb-16">Our Prestigious Partners</h2>
+            <div className="grid grid-cols-5 gap-6">
+               {[
+                 "/client logo/IMG-20260430-WA0033.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0034(1).jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0035.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0036.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0037.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0038.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0039.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0040.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0041.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0042.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0043.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0044.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0045.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0046.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0047.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0048.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0049(1).jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0050.jpg.jpeg",
+                 "/client logo/IMG-20260430-WA0051.jpg.jpeg",
+               ].map((logo, i) => (
+                 <div key={i} className="flex items-center justify-center p-4 bg-white rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer aspect-square">
+                    <img
+                      src={logo}
+                      alt={`Client ${i + 1}`}
+                      className="w-full h-full object-contain"
+                    />
                  </div>
                ))}
             </div>
